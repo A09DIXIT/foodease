@@ -1,7 +1,7 @@
 import Navbar from './Components/Navbar/Navbar';
-import HeroBanner from './Components/HeroBanner/HeroBanner';
-import CategorySlider from './Components/CategorySlider/CategorySlider';
 import ProductList from './Components/ProductList/ProductList';
+import HeroBanner from './Components/HeroBanner/HeroBanner';
+import Footer from './Components/Footer/Footer';
 
 export default function App() {
   const sampleProduct = {
@@ -14,10 +14,10 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <HeroBanner />
-      <CategorySlider />
+     <HeroBanner />
      
       <ProductList />
+      <Footer />
     </>
   );
 }

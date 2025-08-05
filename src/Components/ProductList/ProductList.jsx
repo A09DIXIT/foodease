@@ -4,9 +4,9 @@ import React from "react";
 const products = [
   {
     id: 1,
-    name: "Organic Mangoes",
-    price: 150,
-    image: "/product (1).jpg",
+    name: "Doon Valley Red Chilli Powder Ex Hot 400g",
+    price:  6.99 ,
+    image: "/DoonValleyRedChilliPowderExHot400g.png",
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ const ProductCard = ({ product }) => {
         className="w-full h-40 object-cover rounded"
       />
       <h3 className="text-lg font-semibold mt-2">{product.name}</h3>
-      <p className="text-green-600 font-bold">₹{product.price}</p>
+      <p className="text-green-600 font-bold"> ${product.price}</p>
       <button className="mt-2 w-full bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition">
         Add to Cart
       </button>
@@ -74,7 +74,7 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-      <h2 className="text-2xl text-center font-bold mb-4">OUR PRODUCTS</h2>
+      <h2 className="text-2xl text-center font-bold mb-4">OUR PRODUCT</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
