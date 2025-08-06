@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import PromoBanners from "../PromoBanners/PromoBanners";
 
 export default function HeroBanner() {
   const productSections = [
@@ -23,15 +24,7 @@ export default function HeroBanner() {
         { name: "Coriander Powder.png", img: "/corianderpowder.png" },
       ],
     },
-    {
-      title: "New Arrivals",
-      color: "blue-50",
-      textColor: "text-red-600",
-      items: [
-        { name: "Fresh Mango Pickle", img: "/products/new1.jpg" },
-        { name: "Natural Honey", img: "/products/new2.jpg" },
-      ],
-    },
+   
   ];
 
   return (
@@ -139,7 +132,7 @@ export default function HeroBanner() {
 
       {/* ===== Section 2: Weekly Specials Slider ===== */}
       <section className="mt-14 px-4 md:px-10">
-        <h2 className="text-3xl font-extrabold text-center mb-6 text-green-700 tracking-tight">
+        <h2 className="text-3xl font-bold text-left mb-6 text-red-600 tracking-tight">
           Weekly Specials
         </h2>
         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} showArrows={false}>
@@ -164,7 +157,7 @@ export default function HeroBanner() {
       {/* ===== Section 3: Sweets Corner (Swiper) ===== */}
 
       <section className="py-24 px-4 md:px-10 bg-pink-50">
-  <h2 className="text-2xl md:text-3xl font-bold mb-8 text-red-600 text-center">
+  <h2 className="text-2xl md:text-3xl font-bold mb-8 text-red-600 text-left">
     Sweets Corner
   </h2>
   <Swiper
@@ -232,7 +225,7 @@ export default function HeroBanner() {
           className={`py-24 px-4 md:px-10 bg-${section.color}`}
         >
           <h2
-            className={`text-2xl md:text-3xl font-bold mb-8 ${section.textColor} text-center`}
+            className={`text-2xl md:text-3xl font-bold mb-8 ${section.textColor} text-left`}
           >
             {section.title}
           </h2>
@@ -253,6 +246,7 @@ export default function HeroBanner() {
           </div>
         </section>
       ))}
+      <PromoBanners />
 
       {/* ===== Section 6: Ways to Shop ===== */}
       <section className="py-16 px-4 md:px-10 bg-gradient-to-r from-green-50 via-green-100 to-green-50 text-center">
