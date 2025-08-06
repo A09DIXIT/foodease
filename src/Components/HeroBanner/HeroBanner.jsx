@@ -14,9 +14,9 @@ export default function HeroBanner() {
       textColor: "text-red-600",
       items: [
         { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
-        { name: "Coriander Powder.png", img: "/corianderpowder.png" },
-        { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
-        { name: "Coriander Powder.png", img: "/corianderpowder.png" },
+        { name: "Doon Valley Coriander Powder 400g", img: "/corianderpowder.png" },
+        { name: "Doon Valley Puffed Rice Basmati 400g", img: "/puffed rice basmati.png" },
+        { name: "Doon Valley Coriander Seeds 200g", img: "/CORIANDER SEEDS.png" },
         { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
         { name: "Coriander Powder.png", img: "/corianderpowder.png" },
         { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
@@ -61,6 +61,11 @@ export default function HeroBanner() {
                   desc: "Refresh your cart",
                 },
                 {
+                  src: "/water.png",
+                  title: "Frozen Favorites",
+                  desc: "Stock up today",
+                },
+                  {
                   src: "/water.png",
                   title: "Frozen Favorites",
                   desc: "Stock up today",
