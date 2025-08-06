@@ -17,8 +17,8 @@ export default function HeroBanner() {
         { name: "Doon Valley Coriander Powder 400g", img: "/corianderpowder.png" },
         { name: "Doon Valley Puffed Rice Basmati 400g", img: "/puffed rice basmati.png" },
         { name: "Doon Valley Coriander Seeds 200g", img: "/CORIANDER SEEDS.png" },
-        { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
-        { name: "Coriander Powder.png", img: "/corianderpowder.png" },
+        { name: "Doon Valley Corn Flour White 908g", img: "/DoonValleyCornFlourWhite908g.png" },
+        { name: "Doon Valley Crispy Chilli Oil 230g", img: "/DV CRISPY CHILLI OIL.png" },
         { name: "Doon Valley Fada Coarse 908g", img: "/DoonValleyFadaCoarse.png" },
         { name: "Coriander Powder.png", img: "/corianderpowder.png" },
       ],
@@ -189,14 +189,15 @@ export default function HeroBanner() {
         name: "Doon Valley Red Chilli Powder Ex Hot 400g",
         image: "/DoonValleyRedChilliPowderExHot400g.png",
       },
-        {
-        name: "Doon Valley Yellow Mustard Seeds 200g",
-        image: "/YellowMustardSeeds.png",
+       { name: "Doon Valley Puffed Rice Basmati 400g", 
+        image: "/puffed rice basmati.png" 
       },
-      {
-        name: "Doon Valley Red Chilli Powder Ex Hot 400g",
-        image: "/DoonValleyRedChilliPowderExHot400g.png",
-      },
+        { name: "Doon Valley Coriander Seeds 200g", 
+          image: "/CORIANDER SEEDS.png" 
+        },
+        { name: "Doon Valley Corn Flour White 908g", 
+          image: "/DoonValleyCornFlourWhite908g.png" 
+        },
         {
         name: "Doon Valley Yellow Mustard Seeds 200g",
         image: "/YellowMustardSeeds.png",
