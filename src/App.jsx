@@ -2,7 +2,6 @@ import Navbar from './Components/Navbar/Navbar';
 import ProductList from './Components/ProductList/ProductList';
 import HeroBanner from './Components/HeroBanner/HeroBanner';
 import Footer from './Components/Footer/Footer';
-import PromoBanner from './Components/PromoBanner/PromoBanner1';
 
 export default function App() {
   const sampleProduct = {
@@ -16,7 +15,6 @@ export default function App() {
     <>
       <Navbar />
      <HeroBanner />
-     <PromoBanner />
       <Footer />
     </>
   );
