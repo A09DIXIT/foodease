@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
+  import React, { useState } from "react";
+import { Carousel } from "react-responsive-carousel"; 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import PromoBanners from "../PromoBanners/PromoBanners";
 import PromoBanner from "../PromoBanner/PromoBanner2";
+   
 
 export default function HeroBanner() {
   const productSections = [
@@ -152,7 +153,7 @@ export default function HeroBanner() {
       <section className="py-24 px-4 md:px-10 bg-pink-50">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-red-600">Sweets Corner</h2>
-          <a href="/recipes" className="flex items-center space-x-2">
+          <a href="/products" className="flex items-center space-x-2">
             <span className="text-xl font-medium">View More</span>
           </a>
         </div>
@@ -221,7 +222,7 @@ export default function HeroBanner() {
       <PromoBanners />
 
       {/* ===== Ways to Shop ===== */}
-      <section className="py-16 px-4 md:px-10 bg-gradient-to-r from-green-50 via-green-100 to-green-50 text-center">
+      <section className="py-16 px-4 md:px-10 bg-gradient-to-r from-green-50  via-green-100 to-green-50 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-green-800">Ways to Shop</h2>
         <div className="flex flex-col md:flex-row justify-center gap-8 text-lg font-medium">
           <div className="flex items-center gap-2 hover:scale-105 transition">Home Delivery</div>

@@ -1,21 +1,22 @@
-import Navbar from './Components/Navbar/Navbar';
-import ProductList from './Components/ProductList/ProductList';
-import HeroBanner from './Components/HeroBanner/HeroBanner';
-import Footer from './Components/Footer/Footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import ProductList from "./Pages/ProductList/ProductList";
+import HeroBanner from "./Components/HeroBanner/HeroBanner";
+import Footer from "./Components/Footer/Footer";
 
 export default function App() {
-  const sampleProduct = {
-    name: "Organic Mangoes",
-    price: 129,
-    image: "https://source.unsplash.com/300x200/?mango",
-    description: "Fresh and juicy organic mangoes.",
-  };
-
   return (
-    <>
+    <Router>
       <Navbar />
-     <HeroBanner />
+      <Routes>
+        {/* Homepage */}
+        <Route path="/" element={<HeroBanner />} />
+
+        {/* Product List Page */}
+        <Route path="/products" element={<ProductList />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }

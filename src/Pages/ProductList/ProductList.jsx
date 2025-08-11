@@ -5,49 +5,49 @@ const products = [
   {
     id: 1,
     name: "Doon Valley Red Chilli Powder Ex Hot 400g",
-    price:  6.99 ,
+    price: 6.99,
     image: "/DoonValleyRedChilliPowderExHot400g.png",
   },
   {
     id: 2,
     name: "Fresh Tomatoes",
-    price: 30,
+    price: 6.99,
     image: "/product (3).jpg",
   },
   {
     id: 3,
     name: "Basmati Rice",
-    price: 90,
+    price: 6.99,
     image: "/product (2).jpg",
   },
   {
     id: 4,
     name: "Cold Pressed Oil",
-    price: 250,
+    price: 6.99,
     image: "/product (4).jpg",
   },
   {
     id: 5,
     name: "Fresh Milk (1L)",
-    price: 55,
-   image: "/product (2).jpg"
+    price: 6.99,
+    image: "/product (2).jpg",
   },
   {
     id: 6,
     name: "Organic Bananas",
-    price: 40,
-   image: "/product (4).jpg",
+    price: 6.99,
+    image: "/product (4).jpg",
   },
   {
     id: 7,
     name: "Brown Bread",
-    price: 35,
-   image: "/product (2).jpg"
+    price: 6.99,
+    image: "/product (2).jpg",
   },
   {
     id: 8,
     name: "Raw Honey",
-    price: 180,
+    price: 6.99,
     image: "/product (4).jpg",
   },
 ];
@@ -55,17 +55,26 @@ const products = [
 // Product Card Component
 const ProductCard = ({ product }) => {
   return (
-    <div className="border rounded-lg shadow-md p-4 bg-white hover:shadow-xl transition-all duration-300">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-full h-40 object-cover rounded"
-      />
-      <h3 className="text-lg font-semibold mt-2">{product.name}</h3>
-      <p className="text-green-600 font-bold"> ${product.price}</p>
-      <button className="mt-2 w-full bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition">
-        Add to Cart
-      </button>
+    <div className="border rounded-lg shadow-md bg-white hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col">
+      {/* Image container */}
+      <div className="w-full h-48">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover" // fills box completely
+        />
+      </div>
+
+      {/* Product details */}
+      <div className="p-4 flex flex-col flex-1">
+        <h3 className="text-sm font-semibold text-gray-800 line-clamp-2">
+          {product.name}
+        </h3>
+        <p className="text-green-600 font-bold mt-2">$ {product.price}</p>
+        <button className="mt-auto w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 transition">
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 };

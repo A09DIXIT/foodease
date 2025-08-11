@@ -1,14 +1,16 @@
-import { Bell } from "lucide-react";
-import Logo from "/foodease.png"; // ✅ fixed path
-import { ChevronDown } from "lucide-react"; // for dropdown icon
+import { Link } from "react-router-dom";
+import { Bell, ChevronDown } from "lucide-react";
+import Logo from "/foodease.png";
 
 export default function Navbar() {
   return (
     <nav className="flex flex-col shadow bg-white sticky top-0 z-50">
-      {/* Top Section: Logo, Search, Icons */}
+      {/* Top Section */}
       <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
-          <img src={Logo} alt="Foodease Logo" className="h-20 w-auto" />
+          <Link to="/">
+            <img src={Logo} alt="Foodease Logo" className="h-20 w-auto cursor-pointer" />
+          </Link>
         </div>
 
         <input
@@ -32,7 +34,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Bottom Section: Top Menu */}
+      {/* Bottom Section */}
       <div className="border-t border-gray-200">
         <ul className="flex justify-center gap-6 py-2 text-sm font-medium text-gray-700">
           <li className="flex items-center gap-1 cursor-pointer hover:text-green-600">
